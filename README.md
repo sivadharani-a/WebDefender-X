@@ -6,8 +6,7 @@ It leverages deep learning for anomaly detection and **machine learning models (
 🚀 Features
 - 🔍 Real-time Traffic Analysis – Captures and monitors HTTP/HTTPS traffic live.  
 - 🤖AI-Powered Detection – Uses deep learning & ML models for anomaly detection and classification.  
-- ⚡Attack Prevention – Automatically blocks SQLi, XSS, and DDoS attempts.  <img width="1918" height="980" alt="Screenshot 2025-08-20 234424" src="https://github.com/user-attachments/assets/0e500ce8-7bb0-4179-98b9-b80ec41d5dce" />
-
+- ⚡Attack Prevention – Automatically blocks SQLi, XSS, and DDoS attempts.  
 - 📊Interactive Dashboard – Visualizes traffic flow, anomalies, and attack metrics in real-time.  
 - 🔄Adaptive Learning – Feedback loops continuously improve detection accuracy.  
 - 🏗️Modular & Scalable – Easily deployable across different environments with low false positives.  
