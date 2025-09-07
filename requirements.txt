@@ -1,13 +1,12 @@
 flask==2.3.3
 scikit-learn==1.5.2
-pandas==2.2.2
+pandas==2.2.3
 joblib==1.4.2
 matplotlib==3.9.2
 gunicorn==23.0.0
+numpy==2.1.1
 
 # Build tools 
 pip>=25.2
 setuptools>=75.1.0
 wheel>=0.44.0
-cython>=3.0.11
-numpy==2.1.1
