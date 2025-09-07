@@ -7,3 +7,6 @@ matplotlib==3.5.1
 chart.js==3.9.0
 tailwindcss==2.2.19
 gunicorn==23.0.0
+pip>=24.0
+setuptools>=68.0
+wheel
