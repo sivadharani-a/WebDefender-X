@@ -1,11 +1,11 @@
 flask==2.3.3
 scikit-learn==1.5.2
-pandas==1.4.2
-joblib==1.1.0
-matplotlib==3.5.1
-chart.js==3.9.0
-tailwindcss==2.2.19
+pandas==2.2.2
+joblib==1.4.2
+matplotlib==3.9.2
 gunicorn==23.0.0
+
+# Build tools
 pip>=25.2
 setuptools>=68.0
 wheel
