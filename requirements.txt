@@ -5,9 +5,9 @@ joblib==1.4.2
 matplotlib==3.9.2
 gunicorn==23.0.0
 
-# Build tools
+# Build tools 
 pip>=25.2
-setuptools>=68.0
-wheel
-cython
-numpy
+setuptools>=75.1.0
+wheel>=0.44.0
+cython>=3.0.11
+numpy==2.1.1
