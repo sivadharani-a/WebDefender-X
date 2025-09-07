@@ -1,6 +1,9 @@
-Flask==3.0.3
-python-nmap==0.7.1
-scapy==2.5.0
-jinja2==3.1.4
-Werkzeug==3.0.3
+flask==2.1.1
+scikit-learn==1.0.2
+pandas==1.4.2
+joblib==1.1.0
+numpy==1.21.2
+matplotlib==3.5.1
+chart.js==3.9.0
+tailwindcss==2.2.19
 gunicorn==23.0.0
