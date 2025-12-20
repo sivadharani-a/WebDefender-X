@@ -1,62 +1,86 @@
-Real-Time Event Analytics Dashboard
-
-ML-Driven Event Classification • Real-Time Visualization • Browser Integration
-
-This project is a real-time analytics platform that processes live events, classifies them using a combination of rule-based logic + machine learning, and visualizes insights in a modern interactive analytics dashboard.It includes a FastAPI backend for event processing and a React frontend for high-tech visualization.
-
- Key Features
- 1. Machine-Learning Based Event Classification
-
-Uses an Isolation Forest model to detect unusual or anomalous events.
-Applies rule-based classification for known patterns.
-Aggregates results into categorical labels such as:
-allowed
-blocked
-anomaly_detected
-pattern_match
-
-2. Real-Time Event Stream Processing
-
-Backend exposes a lightweight API (/api/inspect, /api/logs)
-
-Each decision is logged with:
-
-Source (IP)
-Target URL / input
-Status
-Category label
-Data refreshes automatically every few seconds in the dashboard.
-
-3. High-Tech Visual Analytics Dashboard (React + Recharts)
-
-The dashboard displays:
-
-KPI Summary
-Total events
-Successful vs error events
-Success rate
-
-Visualizations:
-
-Event Throughput (line chart)
-Status Composition Over Time (stacked area chart)
-Category Breakdown (bar chart)
-Top Event Sources (horizontal ranking bar chart)
-Live Event Stream Table
-Designed with a modern, dark UI using Tailwind CSS.
-
-Screenshots of WebDefender-X dashboard:
+WebDefender-X (AI-Assisted Web Security Platform)
 
 Overview
 
-<img width="1892" height="918" alt="Screenshot 2025-12-11 190134" src="https://github.com/user-attachments/assets/329d4548-7e68-4bb7-96d5-f335be843482" />
+WebDefender-X is a backend-focused web security platform designed to inspect incoming web requests and make risk-based access decisions using a combination of rule-based checks and machine learning–assisted anomaly detection.
+The project demonstrates secure API design, AI-assisted decision logic, audit logging, and deployment readiness.
+This project was developed as an academic capstone and backend security learning initiative.
+
+Key Features
+
+- Request inspection and risk scoring
+- Machine learning–assisted anomaly detection
+- Rule-based detection for common attack patterns
+- Risk-based allow/block decisions
+- Audit logging for traceability
+- API authentication using API keys
+- Containerized deployment using Docker
+
+Technology Stack
+
+Backend: Python, FastAPI
+Machine Learning: scikit-learn (Isolation Forest)
+Security Concepts: Input validation, request analysis, audit logging
+Storage: CSV / SQLite (audit trail)
+Deployment: Docker
+Tools: Git, Linux
+
+Architecture Overview
+
+Client sends a request to the inspection API
+Request is validated and authenticated
+Rule-based checks evaluate known attack indicators
+ML model evaluates behavioral anomalies
+Risk score is calculated
+Decision (ALLOW / BLOCK) is generated
+Decision is logged for audit and analysis
 
 
-Threat Analytics
+Machine Learning Component
 
-<img width="1891" height="914" alt="Screenshot 2025-12-11 190156" src="https://github.com/user-attachments/assets/6a5a2345-cd4e-4ad2-8902-269b20ec0774" />
+- Uses an Isolation Forest model for anomaly detection
+- Model evaluates request characteristics such as payload length and structure
+- Designed to assist decision-making rather than replace rule-based logic
+- Includes scope for monitoring model behavior over time
+- Logging and Audit Trail
 
+Each inspected request is logged with:
 
-Insights & Live Event Stream
+- Timestamp
+- Client IP
+- Risk score
+- Decision
+- Detection reasons
 
-<img width="1889" height="913" alt="Screenshot 2025-12-11 190216" src="https://github.com/user-attachments/assets/f2c6793f-bbb5-47a1-bf88-7caee5b5a886" />
+This supports traceability and incident review.
+
+Deployment
+
+Run Locally
+  pip install -r requirements.txt
+  uvicorn app.main:app --reload
+
+Run with Docker
+  docker build -t webdefender-x .
+  docker run -p 8000:8000 webdefender-x
+
+Security Considerations
+
+- API access protected using API keys
+- Input validation applied to request data
+- Logging designed to support security monitoring
+- Architecture aligned with defensive security principles
+
+Project Scope
+
+This project is intended for:
+
+--> Demonstrating backend engineering skills
+--> Applying machine learning in a security context
+--> Understanding request inspection and risk evaluation
+--> Academic and learning purposes
+--> It is not intended for direct production use without further hardening.
+
+License
+
+This project is provided for educational and demonstration purposes only.
