@@ -1,0 +1,8 @@
+import logging
+
+# Set up logging
+logging.basicConfig(filename='attack_log.csv', level=logging.INFO, format='%(asctime)s,%(message)s')
+
+def log_attack(attack_type, severity):
+    # Log attack information (you can log more details as needed)
+    logging.info(f"{attack_type},{severity}")

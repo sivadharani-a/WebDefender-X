@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+fastapi
+uvicorn
+pandas
+scikit-learn
+joblib
+=======
+fastapi
+uvicorn[standard]
+httpx
+aiohttp
+pydantic
+pandas
+scikit-learn
+joblib
+numpy
+>>>>>>> f9d1d68bf0e18f608d73dc317077a2fe73474e2b

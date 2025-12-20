@@ -1,0 +1,28 @@
+{
+  "name": "WebDefender-X Mini Firewall",
+  "description": "Mini browser firewall powered by your WebDefender-X backend.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "WebDefender-X"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
